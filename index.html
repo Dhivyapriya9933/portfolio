@@ -1,495 +1,648 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>M Dhivya - Full Stack Developer Portfolio</title>
-	<!-- Include the site stylesheet -->
+	<meta name="theme-color" content="#070c12">
+	<meta name="description" content="M Dhivya is a Full Stack Developer in Chennai with 4+ years of experience. React, React Native, Node.js, and MongoDB. Currently a Full Stack Developer at bilimbe, building a CRM.">
+	<meta name="author" content="M Dhivya">
+	<title>M Dhivya — Full Stack Developer</title>
+
+	<meta property="og:title" content="M Dhivya — Full Stack Developer">
+	<meta property="og:description" content="Web and mobile products for live events, from the screen in the room to the admin tools behind it.">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="en_IN">
+
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070c12'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='26' fill='%233eebda'%3ED%3C/text%3E%3C/svg%3E">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-	<!-- Include the site stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
-	<!-- Include the site stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Include the site stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/plugins.css">
-	<!-- Include the site stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/icofont.css">
-	<!-- Include the site stylesheet -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/responsive.css">
-	<!-- Include the site stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/color.css">
-	<!-- AOS Animation CSS -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<!-- Include the site stylesheet -->
-	<style class="color_css"></style>
-</head>
-<body>
-	<!-- Main container of the page -->
-	<div id="wrapper">
-		<!-- Header of the page -->
-		<header id="header">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<!-- logo of the page -->
-						<div class="logo text-uppercase"><a href="#">M DHIVYA</a></div>
-					</div>	
-				</div>
-			</div>
-			<!-- Nav of the page -->
-			<!-- <nav id="nav" class="hidden-xs">
-				<ul class="list-unstyled text-uppercase">
-					<li><a href="#Welcome">Welcome</a></li>
-					<li><a href="#works">works</a></li>
-					<li><a href="#about">about</a></li>
-					<li><a href="#services">services</a></li>
-					<li><a href="#skills">skills</a></li>
-					<li><a href="#contact">contact</a></li>
-				</ul>
-			</nav> -->
-		</header>
-		<!-- Main of the page -->
-		<main id="main">
-			<!-- Banner sec of the page -->
-			<section id="Welcome" class="banner-sec">
-				<div class="container" style="min-height: 100vh; display: flex; align-items: center;">
-					<div class="row" style="display: flex; align-items: center; flex-wrap: wrap; margin: 0; width: 100%;">
-						<!-- Profile Image -->
-						<div class="col-xs-12 col-md-5" data-aos="fade-right" data-aos-duration="1000">
-							<div class="hero-img-box" style="margin: 30px;">
-								<img src="images/profile.jpg" alt="profile image" class="img-responsive" style="width: 100%; object-fit: cover;">
-							</div>
-						</div>
-						<!-- Text Content -->
-						<div class="col-xs-12 col-md-7 hero-text-box" style="padding-left: 40px;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-							<h1 class="text-uppercase" style="margin-bottom: 20px;">
-								<span style="display: block; font-size: 30px; font-weight: 400; color: #ffb400; margin-bottom: 5px;">I'm M Dhivya.</span>
-								Full Stack Developer
-							</h1>
-							<p style="font-size: 16px; margin-bottom: 30px; color: #eee; line-height: 1.6;">I'm a Chennai based Full Stack Developer focused on building scalable, efficient, and robust applications. I am passionate about crafting excellent software from frontend to backend that improves the lives of those around me.</p>
-							<a href="#about" class="btn-primary text-uppercase">
-								<span>More About Me</span>
-								<span class="btn-icon">
-									<i class="fas fa-arrow-right"></i>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Work sec of the page -->
-			<section id="works" class="work-sec" style="padding-top: 80px; padding-bottom: 80px;">
-				<div class="container">
-					<div class="section-title" data-aos="fade-up" data-aos-duration="800">
-						<h2>My <span>Portfolio</span></h2>
-						<span class="title-bg">Works</span>
-					</div>
-					<div class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
-						<button class="active">All</button>
-						<button>Web Apps</button>
-						<button>Mobile Apps</button>
-						<button>Backend APIs</button>
-						<button>Full Stack</button>
-					</div>
-					<div class="row" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-						<div class="col-xs-12 col-sm-6 col-md-4 d-flex" style="padding:10px;">
-							<div class="project-card">
-								<div class="project-card-img">
-									<img src="images/mosaic_wall.jpg" alt="Mosaic Wall">
-									<span class="project-tag">Interactive Display</span>
-								</div>
-								<div class="project-card-body">
-									<h4>Mosaic Wall</h4>
-									<p>A massive interactive photo mosaic built with real-time attendee images displayed on a large screen.</p>
-									<a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 d-flex" style="padding:10px;">
-							<div class="project-card">
-								<div class="project-card-img">
-									<img src="images/sling_app.png" alt="Sling Mobile App">
-									<span class="project-tag">Mobile App</span>
-								</div>
-								<div class="project-card-body">
-									<h4>Sling Mobile App</h4>
-									<p>A dynamic mobile platform for seamless content sharing and real-time audience engagement.</p>
-									<a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 d-flex" style="padding:10px;">
-							<div class="project-card">
-								<div class="project-card-img">
-									<img src="images/sling_mosaic.jpg" alt="Sling with Mosaic">
-									<span class="project-tag">Full Stack</span>
-								</div>
-								<div class="project-card-body">
-									<h4>Sling with Mosaic</h4>
-									<p>Integrated mobile experience syncing live photos from the app to a large display screen.</p>
-									<a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 d-flex" style="padding:10px;">
-							<div class="project-card">
-								<div class="project-card-img">
-									<img src="images/registration_app.jpg" alt="Event Registration">
-									<span class="project-tag">Mobile App</span>
-								</div>
-								<div class="project-card-body">
-									<h4>Event Registration App</h4>
-									<p>End-to-end digital ticketing ecosystem with instant QR code scanning for events.</p>
-									<a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 d-flex" style="padding:10px;">
-							<div class="project-card">
-								<div class="project-card-img">
-									<img src="images/product_dashboard.jpg" alt="Product Management">
-									<span class="project-tag">Web App</span>
-								</div>
-								<div class="project-card-body">
-									<h4>Product Management</h4>
-									<p>Robust admin dashboard for cataloging and tracking diverse digital assets and products.</p>
-									<a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 d-flex" style="padding:10px;">
-							<div class="project-card">
-								<div class="project-card-img">
-									<img src="images/photo_video_app.jpg" alt="Photo Merge App">
-									<span class="project-tag">Full Stack</span>
-								</div>
-								<div class="project-card-body">
-									<h4>Photo Merge App</h4>
-									<p>Creative tool to blend photos and videos effortlessly with a powerful admin control panel.</p>
-									<a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- About sec of the page -->
-			<section id="about" class="about-sec glass-panel" style="padding-top: 80px;">
-				<div class="container">
-					<div class="section-title" data-aos="fade-up" data-aos-duration="800">
-						<h2>About <span>Me</span></h2>
-						<span class="title-bg">Resume</span>
-					</div>
-					<div class="row" style="margin-bottom: 60px;">
-						<!-- Personal Info -->
-						<div class="col-xs-12 col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
-							<h3 style="font-size: 24px; margin-bottom: 20px; text-transform: uppercase;">Personal Infos</h3>
-							<div class="row">
-								<div class="col-xs-6">
-									<ul class="list-unstyled" style="line-height: 35px; color: #eee; font-size: 15px;">
-										<li><span style="opacity: 0.8;">First Name:</span> M</li>
-										<li><span style="opacity: 0.8;">Last Name:</span> Dhivya</li>
-										<li><span style="opacity: 0.8;">Age:</span> 24 Years</li>
-										<li><span style="opacity: 0.8;">Nationality:</span> Indian</li>
-										<li><span style="opacity: 0.8;">Freelance:</span> Available</li>
-									</ul>
-								</div>
-								<div class="col-xs-6">
-									<ul class="list-unstyled" style="line-height: 35px; color: #eee; font-size: 15px;">
-										<li><span style="opacity: 0.8;">Address:</span> Chennai</li>
-										<li><span style="opacity: 0.8;">Phone:</span> +91 8883571421</li>
-										<li><span style="opacity: 0.8;">Email:</span> dhivyapriya0303@gmail.com</li>
-										<li><span style="opacity: 0.8;">Languages:</span> Tamil, English</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- Stats -->
-						<div class="col-xs-12 col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-							<div class="row">
-								<div class="col-xs-6">
-									<div class="stat-box">
-										<h3>4+</h3>
-										<p>Years of<br>Experience</p>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="stat-box">
-										<h3>20+</h3>
-										<p>Completed<br>Projects</p>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="stat-box">
-										<h3>15+</h3>
-										<p>Happy<br>Clients</p>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="stat-box">
-										<h3>5+</h3>
-										<p>Tech<br>Stacks</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Services sec of the page -->
-			<section id="services" class="service-sec bg-full overlay" style="background-image: url(images/services_bg.jpg)">
-				<div class="container">
-					<div class="row">
-						<!-- Services detail of the page -->
-						<div class="col-xs-12 col-sm-4 service-col">
-							<h2 class="heading3 text-uppercase" data-heading="F">Frontend Development</h2>
-							<span class="text">Building responsive and interactive <br class="hidden-xs hidden-sm">user interfaces using modern web technologies<br class="hidden-xs hidden-sm"> like React, Angular, and Vue.js.</span>
-						</div>
-						<!-- Services detail of the page -->
-						<div class="col-xs-12 col-sm-4 service-col">
-							<h2 class="heading3 text-uppercase" data-heading="B">Backend Development</h2>
-							<span class="text">Designing and implementing robust <br class="hidden-xs hidden-sm">APIs and server-side logic using Node.js,<br class="hidden-xs hidden-sm"> Python, and database systems.</span>
-						</div>
-						<!-- Services detail of the page -->
-						<div class="col-xs-12 col-sm-4 service-col">
-							<h2 class="heading3 text-uppercase" data-heading="F">Full Stack Solutions</h2>
-							<span class="text">Delivering end-to-end web applications <br class="hidden-xs hidden-sm">from concept and architecture to deployment<br class="hidden-xs hidden-sm"> and ongoing maintenance.</span>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Skills sec of the page -->
-			<section id="skills" class="skill-sec" style="padding-top: 50px;">
-				<div class="container" data-aos="fade-up" data-aos-duration="800">
-					<h3 class="text-center" style="text-transform: uppercase; margin-bottom: 40px;">My Skills</h3>
-					<div class="row">
-						<!-- Progress of the adobe photoshop -->
-						<div class="col-xs-6 col-sm-4 col-md-3 text-center">
-				            <div class="box" style="background: transparent; border: none; box-shadow: none;">
-				              	<div class="chart" data-percent="90" style="color: #fff;">90%</div>
-					            <strong class="skill text-uppercase" style="font-size: 14px;">React</strong>
-				            </div>
-						</div>
-						<!-- Progress of the adobe illustrator -->
-						<div class="col-xs-6 col-sm-4 col-md-3 text-center">
-				            <div class="box" style="background: transparent; border: none; box-shadow: none;">
-				              	<div class="chart" data-percent="85" style="color: #fff;">85%</div>
-					            <strong class="skill text-uppercase" style="font-size: 14px;">React Native</strong>
-				            </div>
-						</div>
-						<!-- Progress of the lighting -->
-						<div class="col-xs-6 col-sm-4 col-md-3 text-center">
-				            <div class="box" style="background: transparent; border: none; box-shadow: none;">
-				              	<div class="chart" data-percent="90" style="color: #fff;">90%</div>
-					            <strong class="skill text-uppercase" style="font-size: 14px;">Node.js</strong>
-				            </div>
-						</div>
-						<!-- Progress of the abode lightroom -->
-						<div class="col-xs-6 col-sm-4 col-md-3 text-center">
-				            <div class="box" style="background: transparent; border: none; box-shadow: none;">
-				              	<div class="chart" data-percent="80" style="color: #fff;">80%</div>
-					            <strong class="skill text-uppercase" style="font-size: 14px;">MongoDB</strong>
-				            </div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Resume sec of the page -->
-			<section class="resume-sec glass-panel" style="padding-bottom: 80px;">
-				<div class="container">
-					<h3 class="text-center" style="text-transform: uppercase; margin-bottom: 50px;" data-aos="fade-up">Experience & Education</h3>
-					<div class="row">
-						<!-- Experience column -->
-						<div class="col-xs-12 col-md-6" data-aos="fade-right" data-aos-duration="800">
-							<div class="resume-item">
-								<span class="duration">Jan 2025 - Present</span>
-								<h5>Full Stack Developer <span>- bilimbe</span></h5>
-								<p style="color: #ccc; font-size: 14px;">Building highly scalable web applications, designing user interfaces, and ensuring robust backend integration.</p>
-							</div>
-							<div class="resume-item">
-								<span class="duration">May 2022 - Jan 2025</span>
-								<h5>Software Engineer <span>- Us Global Solutions</span></h5>
-								<p style="color: #ccc; font-size: 14px;">Developed seamless mobile platforms and engaged in continuous iterative delivery of various critical systems.</p>
-							</div>
-							<div class="resume-item">
-								<span class="duration">Jan 2025 - Mar 2025</span>
-								<h5>Freelance Developer <span>- Food Delivery Systems</span></h5>
-								<p style="color: #ccc; font-size: 14px;">Created dynamic, food ordering systems incorporating robust admin dashboards.</p>
-							</div>
-						</div>
-						<!-- Education column -->
-						<div class="col-xs-12 col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-							<div class="resume-item">
-								<span class="duration">2019</span>
-								<h5>B.E. Computer Science <span>- University College of Engineering</span></h5>
-								<p style="color: #ccc; font-size: 14px;">Completed comprehensive engineering degree focusing on software architectures and system designs.</p>
-							</div>
-							<div class="resume-item">
-								<span class="duration">2015</span>
-								<h5>Higher Secondary Certificate <span>- St. Theresa's Girls HSS</span></h5>
-								<p style="color: #ccc; font-size: 14px;">Graduated with top honors majoring in pure sciences and mathematics.</p>
-							</div>
-							<div class="resume-item">
-								<span class="duration">2013</span>
-								<h5>Secondary School Leaving Certificate <span>- Government High School</span></h5>
-								<p style="color: #ccc; font-size: 14px;">Excellent academic foundation.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Testimonials section commented out as there is no real data provided yet
-			<section class="testimonial-sec bg-full overlay" style="background-image:url(https://via.placeholder.com/1920x585);">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<h2 class="heading text-uppercase" data-heading="speech">What clients say about me</h2>
-							<div class="testimonial-holder">
-								<div class="client-feedback">
-									<blockquote class="slide">
-										<i class="icon fas fa-quote-left"></i>
-										<q>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum <br class="hidden-xs hidden-sm">dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent <br class="hidden-xs hidden-sm">luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</q>
-										<cite class="author text-capitalize">admin</cite>
-										<span class="desination text-capitalize">Project Manager, Sitename</span>
-									</blockquote>
-									<blockquote class="slide">
-										<i class="icon fas fa-quote-left"></i>
-										<q>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum <br class="hidden-xs hidden-sm">dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent <br class="hidden-xs hidden-sm">luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</q>
-										<cite class="author text-capitalize">John Doe</cite>
-										<span class="desination text-capitalize">Project Manager, Sitename</span>
-									</blockquote>
-									<blockquote class="slide">
-										<i class="icon fas fa-quote-left"></i>
-										<q>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum <br class="hidden-xs hidden-sm">dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent <br class="hidden-xs hidden-sm">luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</q>
-										<cite class="author text-capitalize">Johnson</cite>
-										<span class="desination text-capitalize">Project Manager, Sitename</span>
-									</blockquote>
-									<blockquote class="slide">
-										<i class="icon fas fa-quote-left"></i>
-										<q>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum <br class="hidden-xs hidden-sm">dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent <br class="hidden-xs hidden-sm">luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</q>
-										<cite class="author text-capitalize">John</cite>
-										<span class="desination text-capitalize">Project Manager, Sitename</span>
-									</blockquote>
-								</div>
-								<ul class="list-unstyled slick-slider client-slider">
-						            <li><img src="https://via.placeholder.com/110x110" alt="image description" class="img-responsive"></li>
-						            <li><img src="https://via.placeholder.com/110x110" alt="image description" class="img-responsive"></li>
-						            <li><img src="https://via.placeholder.com/110x110" alt="image description" class="img-responsive"></li>
-						            <li><img src="https://via.placeholder.com/110x110" alt="image description" class="img-responsive"></li>
-						        </ul>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</section>
-			-->
-			<!-- Contact-sec of the page -->
-			<section class="contact-sec glass-panel" id="contact" style="padding-top: 80px; padding-bottom: 80px;">
-				<div class="container">
-					<div class="section-title" data-aos="fade-up">
-						<h2>Get in <span>Touch</span></h2>
-						<span class="title-bg">Contact</span>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-md-4" data-aos="fade-right" data-aos-duration="800">
-							<h3 style="text-transform: uppercase; margin-bottom: 20px;">Don't be shy!</h3>
-							<p style="color: #eee; margin-bottom: 30px;">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-							<ul class="list-unstyled contact-list" style="margin-bottom: 40px;">
-								<li style="margin-bottom: 20px; display: flex; align-items: flex-start;">
-									<span class="icon-holder" style="color: #ffb400; font-size: 30px; margin-right: 15px;"><i class="fas fa-map-marker-alt"></i></span>
-									<div class="wrap">
-										<strong class="title text-uppercase" style="color: #888; font-size: 13px;">Address Point</strong>
-										<span style="color: #fff; font-weight: 600;">Ramapuram, Chennai - 600089</span>
-									</div>
-								</li>
-								<li style="margin-bottom: 20px; display: flex; align-items: flex-start;">
-									<span class="icon-holder" style="color: #ffb400; font-size: 30px; margin-right: 15px;"><i class="fas fa-envelope-open"></i></span>
-									<div class="wrap">
-										<strong class="title text-uppercase" style="color: #888; font-size: 13px;">Mail Me</strong>
-										<a href="mailto:dhivyapriya0303@gmail.com" style="color: #fff; font-weight: 600;">dhivyapriya0303@gmail.com</a>
-									</div>
-								</li>
-								<li style="margin-bottom: 20px; display: flex; align-items: flex-start;">
-									<span class="icon-holder" style="color: #ffb400; font-size: 30px; margin-right: 15px;"><i class="fas fa-phone-square-alt"></i></span>
-									<div class="wrap">
-										<strong class="title text-uppercase" style="color: #888; font-size: 13px;">Call Me</strong>
-										<a href="tel:+918883571421" style="color: #fff; font-weight: 600;">+91 8883571421</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-xs-12 col-md-8" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-							<div class="contact-form">
-								<form id="contactForm" data-toggle="validator">
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<div class="form-group">
-												<input class="form-control" id="txtname" name="name" type="text" placeholder="YOUR NAME" required>
-											</div>
-										</div>
-										<div class="col-xs-12 col-sm-6">
-											<div class="form-group">
-												<input class="form-control" id="txtemail" name="email" type="email" placeholder="YOUR EMAIL" required>
-											</div>
-										</div>
-										<div class="col-xs-12">
-											<div class="form-group">
-												<input class="form-control" id="txtsubject" name="subject" type="text" placeholder="YOUR SUBJECT" required>
-											</div>
-										</div>
-										<div class="col-xs-12">
-											<div class="form-group">
-												<textarea class="form-control" id="txtmessage" name="message" placeholder="YOUR MESSAGE" required style="height: 150px;"></textarea>
-											</div>
-										</div>
-										<div class="col-xs-12">
-											<button type="submit" class="btn-primary text-uppercase" id="form-submit">
-												<span>Send Message</span>
-												<span class="btn-icon">
-													<i class="fas fa-paper-plane"></i>
-												</span>
-											</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>			
-			</section>
-		</main>
-		<!-- Footer of the page -->
-		<footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6">
-						<span class="text">© 2026 Copyright, M Dhivya. All Rights Reserved</span>
-					</div>
-					<div class="col-xs-12 col-sm-6 text-right">
-						<!-- removed dummy social icons -->
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<!-- Include jQuery -->
-	<script src="js/jquery.js"></script>
-	<!-- Include jQuery -->
-	<script src="js/plugins.js"></script>
-	<!-- Include jQuery -->
-	<script src="js/jquery.main.js"></script>
-	<!-- AOS Animation JS -->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init({
-			once: true, // whether animation should happen only once - while scrolling down
-			offset: 100, // offset (in px) from the original trigger point
-		});
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/color.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "M Dhivya",
+		"jobTitle": "Full Stack Developer",
+		"email": "mailto:dhivyapriya0303@gmail.com",
+		"telephone": "+91-8883571421",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Chennai",
+			"addressRegion": "Tamil Nadu",
+			"addressCountry": "IN"
+		},
+		"worksFor": { "@type": "Organization", "name": "bilimbe" },
+		"knowsLanguage": ["Tamil", "English"],
+		"knowsAbout": ["React", "React Native", "Node.js", "MongoDB", "JavaScript", "REST APIs"]
+	}
 	</script>
-	<!-- <div id="style-changer" data-src="inc/style-changer.html"></div> -->
+</head>
+<body id="top">
+	<a class="skip" href="#main">Skip to content</a>
+	<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+	<header id="header" class="site-header">
+		<div class="header-inner">
+			<a class="logo" href="#top">Dhivya<span>.</span></a>
+			<nav class="site-nav" id="nav" aria-label="Primary">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">What I do</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#works">Projects</a></li>
+					<li><a href="#resume">Experience</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<a class="btn-solid btn-small header-cta" href="#contact">Contact</a>
+			<button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+				<span></span><span></span>
+			</button>
+		</div>
+	</header>
+
+	<main id="main">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="ambient ambient-1" aria-hidden="true"></div>
+			<div class="ambient ambient-2" aria-hidden="true"></div>
+			<div class="container hero-grid">
+				<div class="hero-copy">
+					<p class="eyebrow"><span class="dot" aria-hidden="true"></span> Open to full-time roles and freelance</p>
+					<h1 id="hero-title">Hi, I'm <span class="name">Dhivya</span><span class="mark">.</span></h1>
+					<p class="role">Full Stack Developer · 4+ years · Chennai</p>
+					<p class="lede">I build web and mobile products from the screen to the API. My day-to-day stack is React, React Native, Node.js, and MongoDB. I am a Full Stack Developer at bilimbe, building a CRM and event products.</p>
+					<div class="hero-actions">
+						<a href="#contact" class="btn-solid">Contact me</a>
+						<a href="#resume" class="btn-outline">See experience</a>
+					</div>
+					<ul class="hero-meta">
+						<li>B.E. Computer Science</li>
+						<li>Tamil &amp; English</li>
+						<li>Ramapuram, Chennai</li>
+					</ul>
+				</div>
+				<figure class="portrait">
+					<div class="portrait-glow" aria-hidden="true"></div>
+					<div class="portrait-frame">
+						<img src="images/profile.jpg" alt="Portrait of M Dhivya" width="1080" height="1600" fetchpriority="high">
+					</div>
+					<figcaption class="portrait-badge"><span class="dot" aria-hidden="true"></span> Building a CRM at bilimbe</figcaption>
+				</figure>
+			</div>
+
+			<div class="container">
+				<div class="stats-bar">
+					<div class="stat-item"><strong>4+ yrs</strong><span>Full stack experience</span></div>
+					<div class="stat-item"><strong>B.E.</strong><span>Computer Science, 2019</span></div>
+					<div class="stat-item"><strong>Now</strong><span>CRM at bilimbe</span></div>
+					<div class="stat-item"><strong>Stack</strong><span>React, Node, MongoDB</span></div>
+				</div>
+			</div>
+		</section>
+
+		<div class="tech-band" aria-label="Technologies">
+			<ul>
+				<li>React</li>
+				<li>React Native</li>
+				<li>Node.js</li>
+				<li>MongoDB</li>
+				<li>JavaScript</li>
+				<li>REST APIs</li>
+				<li>Admin dashboards</li>
+				<li>QR ticketing</li>
+				<li>Live displays</li>
+			</ul>
+		</div>
+
+		<section id="about" class="section about">
+			<div class="container about-grid">
+				<div data-animate>
+					<p class="kicker">About</p>
+					<h2>The short version.</h2>
+					<p class="about-text">I am a full stack developer in Chennai. I take a product from the interface to the API, then keep it running. Most of my shipped work is for live events. Right now I am also building a CRM.</p>
+					<ul class="talk-list">
+						<li><strong>Role.</strong> Full Stack Developer, 4+ years.</li>
+						<li><strong>Now.</strong> bilimbe, Jan 2025 to present. Building a CRM, plus event products.</li>
+						<li><strong>Before.</strong> Software Engineer at Us Global Solutions, May 2022 to Jan 2025.</li>
+						<li><strong>Stack.</strong> React, React Native, Node.js, MongoDB, JavaScript, REST APIs. Also Angular and Python.</li>
+						<li><strong>Degree.</strong> B.E. Computer Science, University College of Engineering, 2019.</li>
+						<li><strong>Languages.</strong> Tamil and English. Based in Ramapuram, Chennai.</li>
+					</ul>
+				</div>
+				<aside class="glance" data-animate data-delay="80">
+					<h3>At a glance</h3>
+					<dl>
+						<div><dt>Role</dt><dd>Full Stack Developer</dd></div>
+						<div><dt>Now</dt><dd>CRM at bilimbe</dd></div>
+						<div><dt>Based</dt><dd>Ramapuram, Chennai</dd></div>
+						<div><dt>Languages</dt><dd>Tamil, English</dd></div>
+						<div><dt>Open to</dt><dd>Full-time and freelance</dd></div>
+						<div><dt>Email</dt><dd><a href="mailto:dhivyapriya0303@gmail.com">dhivyapriya0303@gmail.com</a></dd></div>
+						<div><dt>Phone</dt><dd><a href="tel:+918883571421">+91 88835 71421</a></dd></div>
+					</dl>
+				</aside>
+			</div>
+		</section>
+
+		<section id="services" class="section services">
+			<div class="container">
+				<header class="section-head" data-animate>
+					<p class="kicker">What I do</p>
+					<h2>Work I can own on a team.</h2>
+					<p>I can take a feature from the screen to the database, or join a team that already has one of those pieces.</p>
+				</header>
+				<div class="services-grid">
+					<article class="service-card" data-animate>
+						<span class="service-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+						</span>
+						<h3>Frontend</h3>
+						<p>Screens in React and Angular that stay clear on a phone and on a large display.</p>
+					</article>
+					<article class="service-card" data-animate data-delay="60">
+						<span class="service-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>
+						</span>
+						<h3>Backend</h3>
+						<p>APIs and server logic in Node.js and Python.</p>
+					</article>
+					<article class="service-card" data-animate data-delay="120">
+						<span class="service-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+						</span>
+						<h3>Mobile apps</h3>
+						<p>React Native apps for sharing a photo, scanning a pass, or sending a message.</p>
+					</article>
+					<article class="service-card" data-animate data-delay="40">
+						<span class="service-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>
+						</span>
+						<h3>Full stack</h3>
+						<p>One person across the UI, the API, and the release.</p>
+					</article>
+					<article class="service-card" data-animate data-delay="100">
+						<span class="service-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+						</span>
+						<h3>Database design</h3>
+						<p>MongoDB models for catalogs, tickets, campaigns, and live event data.</p>
+					</article>
+					<article class="service-card" data-animate data-delay="160">
+						<span class="service-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16"/><path d="M8 16v-5M12 16V8M16 16v-3"/></svg>
+						</span>
+						<h3>Admin dashboards</h3>
+						<p>Admin panels for products, questions, certificates, messages, and live activity.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="section skills">
+			<div class="container">
+				<header class="section-head" data-animate>
+					<p class="kicker">Skills</p>
+					<h2>Tools I use on the job.</h2>
+					<p>These are the ones I use to ship. Angular and Python come up on some projects too.</p>
+				</header>
+				<div class="skills-grid">
+					<div class="skill-panel" data-animate>
+						<h3>Frontend &amp; mobile</h3>
+						<ul class="skill-list">
+							<li>
+								<div class="skill-meta"><span>React</span><span>90%</span></div>
+								<div class="skill-track" role="img" aria-label="React, 90 percent"><span style="--w:90%"></span></div>
+							</li>
+							<li>
+								<div class="skill-meta"><span>JavaScript</span><span>88%</span></div>
+								<div class="skill-track" role="img" aria-label="JavaScript, 88 percent"><span style="--w:88%"></span></div>
+							</li>
+							<li>
+								<div class="skill-meta"><span>React Native</span><span>85%</span></div>
+								<div class="skill-track" role="img" aria-label="React Native, 85 percent"><span style="--w:85%"></span></div>
+							</li>
+						</ul>
+					</div>
+					<div class="skill-panel" data-animate data-delay="80">
+						<h3>Backend &amp; data</h3>
+						<ul class="skill-list">
+							<li>
+								<div class="skill-meta"><span>Node.js</span><span>90%</span></div>
+								<div class="skill-track" role="img" aria-label="Node.js, 90 percent"><span style="--w:90%"></span></div>
+							</li>
+							<li>
+								<div class="skill-meta"><span>APIs</span><span>82%</span></div>
+								<div class="skill-track" role="img" aria-label="APIs, 82 percent"><span style="--w:82%"></span></div>
+							</li>
+							<li>
+								<div class="skill-meta"><span>MongoDB</span><span>80%</span></div>
+								<div class="skill-track" role="img" aria-label="MongoDB, 80 percent"><span style="--w:80%"></span></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="works" class="section projects">
+			<div class="container">
+				<header class="section-head" data-animate>
+					<p class="kicker">Projects</p>
+					<h2>Proof I can show.</h2>
+					<p>Each card is a product I built. The first line says what it is. Open a card to see the full image.</p>
+				</header>
+				<div class="filters" role="toolbar" aria-label="Filter projects" data-animate>
+					<button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All <span>17</span></button>
+					<button type="button" class="filter" data-filter="current" aria-pressed="false">Now</button>
+					<button type="button" class="filter" data-filter="events" aria-pressed="false">Events</button>
+					<button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
+					<button type="button" class="filter" data-filter="admin" aria-pressed="false">Admin</button>
+				</div>
+				<p class="work-count" id="workCount" aria-live="polite"></p>
+				<div class="work-grid" id="workGrid">
+					<article class="work-card" data-tags="current" data-animate>
+						<div class="work-media work-media-note">
+							<span>In progress</span>
+							<strong>CRM</strong>
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Now</p>
+							<h3>CRM</h3>
+							<p>A CRM I am building now at bilimbe. In progress, next to the event products.</p>
+							<ul class="tags"><li>In progress</li><li>bilimbe</li><li>Full stack</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View CRM">View</button>
+					</article>
+<article class="work-card" data-tags="events admin" data-animate>
+						<div class="work-media">
+							<img src="images/music%20feedback%20wall.png" alt="Music Feedback Wall with a live thought wall, admin panel, and listener submission screen" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Live display</p>
+							<h3>Music Feedback Wall</h3>
+							<p>A live wall for song feedback. Listeners post a thought. An admin manages tracks and QR codes.</p>
+							<ul class="tags"><li>Events</li><li>Realtime</li><li>Admin</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Music Feedback Wall">View</button>
+					</article>
+					<article class="work-card" data-tags="events" data-animate>
+						<div class="work-media">
+							<img src="images/mosaic_wall.jpg" alt="Mosaic Wall project poster showing a live photo mosaic on a large screen" width="1024" height="682" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Live display</p>
+							<h3>Mosaic Wall</h3>
+							<p>A live photo wall. Guest photos form one mosaic on a large screen.</p>
+							<ul class="tags"><li>Events</li><li>Realtime</li><li>Display</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Mosaic Wall">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events mobile" data-animate data-delay="60">
+						<div class="work-media">
+							<img src="images/sling_app.png" alt="SlingShot app poster with phones sending messages and photos to a live screen" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Mobile</p>
+							<h3>SlingShot</h3>
+							<p>A mobile app. A guest sends a message or photo and it shows on the venue screen.</p>
+							<ul class="tags"><li>React Native</li><li>Mobile</li><li>Live</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View SlingShot">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events mobile" data-animate data-delay="120">
+						<div class="work-media">
+							<img src="images/sling_mosaic.jpg" alt="Sling app connected to a photo mosaic wall at a Chennai event" width="1024" height="682" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Live display</p>
+							<h3>Sling + Mosaic</h3>
+							<p>The phone app and the photo wall together. A shared photo becomes part of the live mosaic.</p>
+							<ul class="tags"><li>Full stack</li><li>Sync</li><li>Events</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Sling plus Mosaic">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events mobile" data-animate>
+						<div class="work-media">
+							<img src="images/registration_app.jpg" alt="Event registration app with account sign-up and QR code scanning" width="1024" height="682" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Mobile</p>
+							<h3>Event Registration</h3>
+							<p>Event sign-up and entry. People register, hold a pass, and scan a QR code at the door.</p>
+							<ul class="tags"><li>Mobile</li><li>QR</li><li>Events</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Event Registration">View</button>
+					</article>
+
+					<article class="work-card" data-tags="admin" data-animate data-delay="60">
+						<div class="work-media">
+							<img src="images/product_dashboard.jpg" alt="Bilimbe admin dashboard for event products, categories, and pricing" width="1024" height="682" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Admin</p>
+							<h3>Product Management</h3>
+							<p>An admin for event products. Categories, materials, city pricing, and a catalog.</p>
+							<ul class="tags"><li>React</li><li>Node</li><li>Admin</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Product Management">View</button>
+					</article>
+
+					<article class="work-card" data-tags="mobile admin" data-animate data-delay="120">
+						<div class="work-media">
+							<img src="images/photo_video_app.jpg" alt="Photo and video merge app with mobile creation flow and admin dashboards" width="1024" height="682" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Media</p>
+							<h3>Photo &amp; Video Merge</h3>
+							<p>A mobile app to merge photos and video, with admin dashboards behind it.</p>
+							<ul class="tags"><li>Full stack</li><li>Media</li><li>Admin</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Photo and Video Merge">View</button>
+					</article>
+
+					<article class="work-card" data-tags="admin" data-animate>
+						<div class="work-media">
+							<img src="images/whatsppautomation.png" alt="WhatsApp automation dashboard for campaigns, subscribers, and message preview" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Messaging</p>
+							<h3>WhatsApp Automation</h3>
+							<p>A dashboard to send WhatsApp campaigns and watch scans, subscribers, and sends.</p>
+							<ul class="tags"><li>Full stack</li><li>WhatsApp</li><li>Dashboard</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View WhatsApp Automation">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events admin" data-animate data-delay="60">
+						<div class="work-media">
+							<img src="images/qusboard.png" alt="Conference Q and A board with a phone form and a session questions dashboard" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Live sessions</p>
+							<h3>Smart Q&amp;A</h3>
+							<p>Live questions at a conference. The audience submits them. Organizers clear them during the session.</p>
+							<ul class="tags"><li>Web</li><li>Realtime</li><li>Events</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Smart Q and A">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events admin" data-animate data-delay="120">
+						<div class="work-media">
+							<img src="images/certificate_creator.png" alt="Certificate creator with a design canvas, typography controls, and distribution steps" width="1200" height="896" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Events</p>
+							<h3>Certificate Creator</h3>
+							<p>A tool to design a certificate, add recipients, and send it out.</p>
+							<ul class="tags"><li>Web</li><li>Design</li><li>Events</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Certificate Creator">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events admin" data-animate data-delay="60">
+						<div class="work-media">
+							<img src="images/treemosaic%20without%20logo.png" alt="Innovation tree mosaic where guests add a leaf and organizers track planted submissions" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Live display</p>
+							<h3>Tree Mosaic</h3>
+							<p>A live tree for an event. Guests add a leaf. Organizers track every submission.</p>
+							<ul class="tags"><li>Events</li><li>Realtime</li><li>Admin</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Tree Mosaic">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events" data-animate data-delay="120">
+						<div class="work-media">
+							<img src="images/kitewall.png" alt="Kite Wall where people draw or upload a kite and watch it fly on a shared wall" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Live display</p>
+							<h3>Kite Wall</h3>
+							<p>A shared kite wall. People draw or upload a kite and see it fly with the others.</p>
+							<ul class="tags"><li>Events</li><li>Upload</li><li>Display</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Kite Wall">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events mobile admin" data-animate>
+						<div class="work-media">
+							<img src="images/tripmanage.png" alt="Kermis Events trip management with bus boarding, traveler QR scan, and an admin dashboard" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Events</p>
+							<h3>Trip Management</h3>
+							<p>Tour check-in. Travelers, bus boarding, activities, and a phone QR scanner.</p>
+							<ul class="tags"><li>Events</li><li>QR</li><li>Admin</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Trip Management">View</button>
+					</article>
+
+					<article class="work-card" data-tags="events" data-animate data-delay="60">
+						<div class="work-media">
+							<img src="images/MedLandingPage.png" alt="MedNexus Summit registration page with delegate categories and payment" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Registration</p>
+							<h3>MedNexus Summit</h3>
+							<p>A conference registration page. Delegates sign up, pay, and get a confirmation.</p>
+							<ul class="tags"><li>Web</li><li>Events</li><li>Payments</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View MedNexus Summit">View</button>
+					</article>
+
+					<article class="work-card" data-tags="admin" data-animate data-delay="120">
+						<div class="work-media">
+							<img src="images/billingagent.png" alt="Billing Agent landing page for automated contest management and booking a live demo" width="1536" height="1024" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Product</p>
+							<h3>Billing Agent</h3>
+							<p>A product page for contest billing. Scan a bill, run the contest, and book a demo.</p>
+							<ul class="tags"><li>Web</li><li>Admin</li><li>Product</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Billing Agent">View</button>
+					</article>
+					<article class="work-card" data-tags="events" data-live="https://mgmhealthcare.bilimbe.in/" data-animate data-delay="60">
+						<div class="work-media">
+							<img src="images/idhayam-quotient.png" alt="Idhayam Quotient for MGM Healthcare, with tablets for register, vitals, lifestyle, and heart score" width="1800" height="1125" loading="lazy">
+						</div>
+						<div class="work-body">
+							<p class="work-kicker">Healthcare</p>
+							<h3>Idhayam Quotient</h3>
+							<p>Four tablets for MGM Healthcare at Express Avenue. Register, record vitals, ask lifestyle questions, then show a heart score.</p>
+							<ul class="tags"><li>Events</li><li>Healthcare</li><li>Tablets</li></ul>
+						</div>
+						<button type="button" class="work-hit" aria-label="View Idhayam Quotient">View</button>
+					</article>
+
+				</div>
+				<p class="work-empty" id="workEmpty" hidden>Nothing in this group. Try another filter.</p>
+			</div>
+		</section>
+
+		<section id="resume" class="section resume">
+			<div class="container">
+				<header class="section-head" data-animate>
+					<p class="kicker">Experience</p>
+					<h2>Roles, in order.</h2>
+					<p>Newest first. Each line is something I can walk through in an interview.</p>
+				</header>
+				<div class="resume-grid">
+					<div data-animate>
+						<h3 class="col-label">Experience</h3>
+						<ol class="timeline">
+							<li>
+								<p class="when">Jan 2025 — Present</p>
+								<h4>Full Stack Developer</h4>
+								<p class="where">bilimbe</p>
+								<ul class="duty">
+									<li>Building a CRM. This is in progress.</li>
+									<li>Ship event products from the screen to the API: live displays, registration, and admin tools.</li>
+								</ul>
+							</li>
+							<li>
+								<p class="when">Jan 2025 — Mar 2025</p>
+								<h4>Freelance Developer</h4>
+								<p class="where">Food delivery systems</p>
+								<ul class="duty">
+									<li>A three-month contract on food delivery software, alongside the bilimbe role.</li>
+								</ul>
+							</li>
+							<li>
+								<p class="when">May 2022 — Jan 2025</p>
+								<h4>Software Engineer</h4>
+								<p class="where">Us Global Solutions</p>
+								<ul class="duty">
+									<li>Built and maintained software for client projects for just under three years.</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+					<div data-animate data-delay="80">
+						<h3 class="col-label">Education</h3>
+						<ol class="timeline">
+							<li>
+								<p class="when">2019</p>
+								<h4>B.E. Computer Science</h4>
+								<p class="where">University College of Engineering</p>
+							</li>
+							<li>
+								<p class="when">2015</p>
+								<h4>Higher Secondary</h4>
+								<p class="where">St. Theresa's Girls HSS</p>
+							</li>
+							<li>
+								<p class="when">2013</p>
+								<h4>SSLC</h4>
+								<p class="where">Government High School</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section contact">
+			<div class="container contact-grid">
+				<div data-animate>
+					<p class="kicker">Contact</p>
+					<h2>Let’s talk about a role.</h2>
+					<p class="about-text">Full-time, freelance, or a specific build. Send a note and I will reply. Ask if you want a resume.</p>
+					<ul class="contact-list">
+						<li>
+							<span class="service-icon" aria-hidden="true">
+								<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+							</span>
+							<div>
+								<span class="contact-label">Email</span>
+								<a href="mailto:dhivyapriya0303@gmail.com">dhivyapriya0303@gmail.com</a>
+								<button type="button" class="copy-btn" id="copyEmail" data-copy="dhivyapriya0303@gmail.com">Copy</button>
+							</div>
+						</li>
+						<li>
+							<span class="service-icon" aria-hidden="true">
+								<svg viewBox="0 0 24 24"><path d="M8 3H6a2 2 0 0 0-2 2c0 9 6 16 15 16a2 2 0 0 0 2-2v-2l-4-2-2 2a12 12 0 0 1-5-5l2-2-2-4z"/></svg>
+							</span>
+							<div>
+								<span class="contact-label">Phone</span>
+								<a href="tel:+918883571421">+91 88835 71421</a>
+							</div>
+						</li>
+						<li>
+							<span class="service-icon" aria-hidden="true">
+								<svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.2"/></svg>
+							</span>
+							<div>
+								<span class="contact-label">Location</span>
+								<span>Ramapuram, Chennai</span>
+							</div>
+						</li>
+					</ul>
+					<p class="copy-status" id="copyStatus" role="status"></p>
+				</div>
+
+				<form id="contactForm" class="contact-form" action="mailto:dhivyapriya0303@gmail.com" method="post" enctype="text/plain" data-animate data-delay="80">
+					<div class="field">
+						<label for="txtname">Name</label>
+						<input class="form-control" id="txtname" name="name" type="text" autocomplete="name" placeholder="Your name" required maxlength="80">
+					</div>
+					<div class="field">
+						<label for="txtemail">Email</label>
+						<input class="form-control" id="txtemail" name="email" type="email" autocomplete="email" placeholder="you@email.com" required>
+					</div>
+					<div class="field">
+						<label for="txtsubject">Subject</label>
+						<input class="form-control" id="txtsubject" name="subject" type="text" placeholder="What should we build?" required maxlength="120">
+					</div>
+					<div class="field">
+						<label for="txtmessage">Message</label>
+						<textarea class="form-control" id="txtmessage" name="message" placeholder="A little context helps — timeline, product, and what you need." required minlength="10" rows="5"></textarea>
+					</div>
+					<button type="submit" class="btn-solid" id="form-submit">Send message</button>
+					<p class="form-hint">Opens your email app with this message ready to send.</p>
+					<p class="form-status" id="formStatus" role="status"></p>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer id="footer">
+		<div class="container footer-inner">
+			<a class="logo" href="#top">Dhivya<span>.</span></a>
+			<nav aria-label="Footer">
+				<a href="#works">Projects</a>
+				<a href="#resume">Experience</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<p class="text">© <span id="year">2026</span> M Dhivya. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<button type="button" class="to-top" id="toTop" aria-label="Back to top" hidden>
+		<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+	</button>
+
+	<dialog id="projectDialog" aria-labelledby="dialogTitle">
+		<div class="dialog-bar">
+			<button type="button" class="dialog-close" id="dialogClose">Close</button>
+		</div>
+		<img id="dialogImg" alt="">
+		<div class="dialog-body">
+			<p class="work-kicker" id="dialogKicker"></p>
+			<h3 id="dialogTitle"></h3>
+			<p id="dialogCopy"></p>
+			<p class="dialog-live" id="dialogLive" hidden><a href="" target="_blank" rel="noopener">Open live site</a></p>
+			<ul class="tags" id="dialogTags"></ul>
+		</div>
+	</dialog>
+
+	<script src="js/site.js"></script>
 </body>
 </html>
