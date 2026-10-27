@@ -596,6 +596,7 @@ h2 {
 }
 
 .section-head p { margin: 0 auto; max-width: 48ch; }
+.section-head p + p { margin-top: 18px; }
 
 .kicker { margin-bottom: 10px; }
 
