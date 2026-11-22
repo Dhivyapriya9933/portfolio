@@ -2,5 +2,5 @@ services:
   - type: web
     name: dhivya-portfolio
     runtime: static
-    buildCommand: echo "Static portfolio"
-    staticPublishPath: .
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist

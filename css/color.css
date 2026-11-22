@@ -542,20 +542,8 @@ h1 .mark { color: var(--accent); }
   padding: 6px 12px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  opacity: 0;
-  animation: chipIn 0.55s var(--ease) forwards;
   transition: transform 0.25s var(--ease), border-color 0.25s, color 0.25s, box-shadow 0.25s;
 }
-
-.tech-band li:nth-child(1) { animation-delay: 0.45s; }
-.tech-band li:nth-child(2) { animation-delay: 0.52s; }
-.tech-band li:nth-child(3) { animation-delay: 0.59s; }
-.tech-band li:nth-child(4) { animation-delay: 0.66s; }
-.tech-band li:nth-child(5) { animation-delay: 0.73s; }
-.tech-band li:nth-child(6) { animation-delay: 0.8s; }
-.tech-band li:nth-child(7) { animation-delay: 0.87s; }
-.tech-band li:nth-child(8) { animation-delay: 0.94s; }
-.tech-band li:nth-child(9) { animation-delay: 1.01s; }
 
 .tech-band li:hover {
   transform: translateY(-3px);
@@ -804,16 +792,16 @@ h2 {
   background: linear-gradient(90deg, var(--accent-deep), #7ef0e2);
 }
 
-.js .skill-panel:not(.inview) .skill-track span { width: 0; }
+.js .skill-list li:not(.inview) .skill-track span { width: 0; }
 
-.js .skill-panel.inview .skill-track span {
+.js .skill-list li.inview .skill-track span {
   position: relative;
   width: var(--w);
   overflow: hidden;
   transition: width 1.15s var(--ease);
 }
 
-.js .skill-panel.inview .skill-track span::after {
+.js .skill-list li.inview .skill-track span::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -1224,7 +1212,17 @@ dialog::backdrop {
 
 textarea.form-control { resize: vertical; min-height: 130px; }
 
-.contact-form .btn-solid { align-self: flex-start; margin-top: 4px; }
+.send-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.contact-form .send-row .btn-solid,
+.contact-form .send-row .btn-outline {
+  align-self: flex-start;
+}
 
 .form-hint {
   margin: -4px 0 0;
@@ -1280,13 +1278,24 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 
 .js [data-animate] {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(46px);
 }
+
+.js [data-animate="left"] { transform: translateX(-46px); }
+.js [data-animate="right"] { transform: translateX(46px); }
 
 .js [data-animate].inview {
   opacity: 1;
   transform: none;
   transition: opacity 0.7s var(--ease), transform 0.9s var(--ease);
+}
+
+.js [data-animate].is-reset { transition: none; }
+
+.js .service-card.inview:hover,
+.js .work-card.inview:hover,
+.js .work-card.inview:focus-within {
+  transform: translateY(-8px);
 }
 
 @keyframes arrive {
@@ -1344,9 +1353,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   animation: arrive 1s var(--ease) 0.18s both;
 }
 
-.stats-bar {
-  animation: arrive 0.9s var(--ease) 0.48s both;
-}
+.tech-band li.inview:hover { transform: translateY(-3px); }
 
 /* Responsive */
 
@@ -1417,7 +1424,8 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .stats-bar { grid-template-columns: 1fr 1fr; }
   .stat-item:nth-child(2)::after { display: none; }
   .glance dl > div { grid-template-columns: 88px 1fr; }
-  .contact-form .btn-solid { width: 100%; }
+  .contact-form .send-row .btn-solid,
+  .contact-form .send-row .btn-outline { width: 100%; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   h1 { font-size: clamp(3.1rem, 16vw, 4.4rem); }
   .work-hit::after { opacity: 1; transform: none; }
